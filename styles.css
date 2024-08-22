@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+html {
+  height: 100vh;
+  background: linear-gradient(180deg, rgba(9,33,44,1) 0%, rgba(4,62,73,1) 100%);
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin:0;
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+
+.bg {
+  overflow: hidden;
+}
+
+.bg img {
+  height: 100%;
+  right: 0%;
+  position: absolute;
+  z-index: -1;
+}
+
+h1 {
+  width: 50vh;
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 2vh;
+}
+
+.cta-maintext {
+  width: 55vh;
+  line-height: 2rem;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.cta-button {
+  width: 50%;
+  margin-top: 2vh;
+  padding: 1rem 0 1rem 0;
+  border: none;
+  border-radius: 40px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  background-color: #63E1E1;
+  box-shadow: 0px 0px 10px white;
+  transition-duration: 1s;
+}
+
+.cta-button:hover {
+  cursor: pointer;
+}
+
+.cta-button:active {
+  box-shadow: 0px 0px;
+  transform: scale(90%);
+}
+
+.main-container {
+  width: 132vh;
+  margin-top: 4vh;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.fancy-border-n-bg {
+  border-radius: 20px;
+  border: 1px #ffffff60 solid;
+  background-color: #00000052;
+  backdrop-filter: blur(15px);
+}
+
+.hero-container {
+  width: 60vh;
+  padding: 2.5rem;
+  align-self: flex-start;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.horizontal-list-container {
+  width: 130vh;
+  margin-top: 2vh;
+  padding: 2rem 0 1rem 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.list-item-container {
+  padding: 0 1rem 0 1rem;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.item-icon {
+  width: 20px;
+}
+
+@media screen and (max-width: 1220px) {
+  .horizontal-list-container {
+    flex-direction: column;
+    width: 35vh;
+    align-items: center;
+  }
+}
