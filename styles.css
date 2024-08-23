@@ -65,7 +65,7 @@ h1 {
 }
 
 .main-container {
-  width: 132vh;
+  width: 70%;
   margin-top: 4vh;
   align-items: center;
   display: flex;
@@ -90,7 +90,8 @@ h1 {
 }
 
 .horizontal-list-container {
-  width: 130vh;
+  flex-wrap: wrap;
+  width: 100%;
   margin-top: 2vh;
   padding: 2rem 0 1rem 0;
   display: flex;
@@ -111,8 +112,8 @@ h1 {
 
 @media screen and (max-width: 1220px) {
   .horizontal-list-container {
-    flex-direction: column;
-    width: 35vh;
+    /* flex-direction: column; */
+    /* width: 35vh; */
     align-items: center;
   }
 }
